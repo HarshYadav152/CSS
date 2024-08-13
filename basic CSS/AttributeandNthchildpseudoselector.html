@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attrbute and nth child pseudo selector</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 250px;
+            display: block;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        input[type="submit"]{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target]{
+            font-size: 50px;
+            color: blue;
+        }
+        a[target="_self"]{
+            font-size: 50px;
+            color: purple;
+        }
+        /* this apply to the given no. of list items */
+        li:nth-child(4){
+            color: yellowgreen;
+            border: 2px solid red;
+        }
+        /* this apply to the even no of list items */
+        /* li:nth-child(2n+0){
+            color: yellowgreen;
+            border: 2px solid red;
+        } */
+        li:nth-child(even){
+            color: purple;
+            border: 2px solid green;
+        }
+        /* this apply to the odd no of list items */
+        /* li:nth-child(2n+1){
+            color: yellowgreen;
+            border: 2px solid red;
+        } */
+        li:nth-child(odd){
+            color: yellowgreen;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://Google.com" target="_blank">Go to Google</a>
+        <a href="http://facebook.com" target="_self">Go to facebook</a>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item 1</li>
+            <li class="item" id="item-2">item 2</li>
+            <li class="item" id="item-3">item 3</li>
+            <li class="item" id="item-4">item 4</li>
+            <li class="item" id="item-5">item 5</li>
+            <li class="item" id="item-6">item 6</li>
+            <li class="item" id="item-7">item 7</li>
+            <li class="item" id="item-8">item 8</li>
+            <li class="item" id="item-9">item 9</li>
+            <li class="item" id="item-10">item 10</li>
+        </ul>
+    </div>
+</body>
+</html>

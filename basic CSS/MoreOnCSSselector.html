@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selector</title>
+    <style>
+        h2{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        div p{ /*div mai jitne p hain un sab ko target kaaro*/ 
+            background-color: red;
+            color: white;
+        }
+        body p{ /*body mai jitne p hain un sab ko target kaaro */
+            background-color: purple;
+            color: black;
+        }
+        /* if p is right inside div then this css is applied */
+        div>p{ /* div ke baad direct p aana chaiye */
+            background-color: orange;
+        }
+        /* if p is right after div then this css is applied i.e; p is the next sibling of div */
+        div+p{ /* p ka pichla sibling us par kaam karegi */
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is more on CSS selector</h2>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is list para</p></li>
+                <li>not affect</li>
+            </ul>
+            <p>This is the paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

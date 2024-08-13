@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Layouts using Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+             'footer footer footer footer';
+
+        }
+        .box{
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 13px ;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            Home About Contact us
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, libero quae nihil deleniti, dolorum neque molestiae impedit asperiores qui saepe fuga. Ipsum, perferendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas non fuga earum debitis maiores aliquid iusto a eaque nemo cupiditate impedit reiciendis possimus eveniet voluptatem porro temporibus quaerat assumenda sequi modi culpa, alias mollitia unde beatae iure. Soluta mollitia officia ratione, vitae nam vero nisi distinctio neque quaerat sunt sed, ut nihil voluptatibus animi quos ipsum placeat fugiat recusandae libero minima! Dicta delectus, accusamus, quae ex ipsam aspernatur magni suscipit, placeat voluptate odit in deserunt dolorem vel est. Cum perspiciatis minima alias deserunt asperiores necessitatibus eaque, unde exercitationem voluptatibus? Ex minus eligendi, delectus fuga quia debitis fugit fugiat assumenda porro!
+        </div>
+        <div id="aside" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, aperiam. Rerum, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur, officiis in a corrupti accusamus dolor modi illum ipsam velit deleniti sunt deserunt magni quis ullam nihil! Libero hic esse mollitia, quaerat autem nihil? Maxime quia explicabo molestiae quas odio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum sit velit ad tempore? Id, dolore fuga recusandae, quis natus quia sint, porro unde dolor corporis autem! Fugiat quasi vitae corrupti facilis nisi rerum officiis delectus quo at omnis? Reiciendis laudantium in saepe hic aut! Laudantium dolore odio aliquid sint officiis dolor, eius et quaerat neque accusantium, rem exercitationem sunt omnis dolorum a fugiat atque ipsum repellat nemo modi error quibusdam iusto. Magnam quis rem assumenda laboriosam pariatur voluptatibus temporibus! Maxime ratione deserunt natus. Voluptatem hic distinctio repellat assumenda? Eveniet eligendi aperiam illo veritatis vitae repellat perferendis eius tempore blanditiis neque asperiores culpa nisi quos, deleniti obcaecati? Expedita assumenda fuga aut ut quis exercitationem excepturi. Deleniti quas omnis unde, ducimus ipsum eaque quia iusto provident id veritatis iste itaque modi magnam perferendis architecto eveniet consectetur aliquid esse? Deleniti culpa sint in placeat debitis mollitia minus velitt aliquid voluptas amet aspernatur ullam iste veniam temporibus distinctio quasi aliquam corporis dolore consequatur, molestiae nobis eius magni, fugit debitis numquam natus non! Dolorem reprehenderit nihil, ratione error dolor impedit esse tempore distinctio, non cumque similique inventore?
+        </div>
+        <footer class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis ad suscipit.
+        </footer>
+        <!-- <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+        <div class="box">Item-13</div>
+        <div class="box">Item-14</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .container {
+            border: 2px solid purple;
+            background-color: khaki;
+            height: 5000px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 4px;
+        }
+
+        #box3 {
+            /* Position in CSS are Static(default), Relative, Absolute, Fixed, Sticky */
+            /* this is eg: of Relative (Relative to its normal position and leave a gap at its normal position)*/
+            /* position:relative; */
+            /* this is eg: of Absolute (Relative to its first parent position )*/
+            /* position: absolute; */
+            /* top: 20px;
+            left: 30px; */
+            /* this is eg: of Absolute (Relative to the browser window )*/
+            /* when we scroll down it doesn't move */
+            /* position: fixed;
+            right: 5px; */
+            position: sticky;
+            top: 4px;
+        }
+
+        .box5 {
+            /* this is eg: of Absolute (Relative to the browser window )*/
+            /* when we scroll down it doesn't move */
+            /* position: fixed; */
+            bottom: 3px;
+            right: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <button  class="box5">
+            <input type="text" placeholder="chat withus">
+        </button>
+    </div>
+</body>
+
+</html>

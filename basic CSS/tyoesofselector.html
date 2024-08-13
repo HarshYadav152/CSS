@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tutorial</title>
+    <style>
+        /* element selector */
+        p{
+            border: 10px solid purple;
+        }
+        /* id selector */
+        #p1{
+            color: red;
+        }
+        /* class selector */
+        .red{
+            color: blue;
+        }
+        .bgblue{
+            color: yellow;
+            background-color: purple;
+        }
+        /* Grouping selector */
+        span ,footer{
+            color: magenta;
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>id and class selector</h3>
+    <p id="p1">This is a simple paragraph using css</p>
+    <p id="p2" class="red bgblue">This is a simple paragraph using css</p>
+    <div>
+        <p class="red">This is a simple paragraph using css</p>
+    </div>
+    <span>This is the span</span>
+    <article>This is an article</article>
+</body>
+</html>

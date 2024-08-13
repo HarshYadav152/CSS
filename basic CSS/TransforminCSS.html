@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in CSS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: antiquewhite;
+            font-size: 20px;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 10pxpx;
+            width: 200px;
+            height: 200px;
+
+            /* transition: all 2s ease-in-out ; */
+        }
+        .box:hover{
+
+            /* rotate our box by 360 degre  */
+            transform: rotate(360deg);
+
+            /* stretch or bend our box by 45 degre */
+            /* transform: skew(45de); */
+
+            /* increase the size of our box 2 times  its original size */
+            transform: scale(1.5);
+
+            /* slide box in x axis / direction */
+            /* transform: translateX(120px); */
+
+            /* slide box in y axis / direction */
+            /* transform: translatey(120px); */
+
+            /* slide box in x or y axis / direction simultaneously */
+            transform: translate(120px,120px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is the box
+        </div>
+    </div>
+</body>
+</html>

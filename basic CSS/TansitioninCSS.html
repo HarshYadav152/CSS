@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+        #box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: aliceblue;
+            width: 200px;
+            height: 200px;
+            border: 2px solid rebeccapurple;
+            background-color: purple;
+
+            /* define for a significance property */
+            /* transition-property: background-color; */
+
+            /* transition duration in how much time transition complete */
+            /* transition-duration: 1s; */
+
+            /* define the speed of transition occur */
+            /* transition-timing-function: ease-in; */
+
+            /* after how much time transitioon starts */
+            /* transition-delay: 2s; */
+
+
+            /* transition shorthand property */
+            /* transition: background-color transition-duration transition-timing-function transition-delay ; */
+            /* transition: background-color 1s ease-in 2s; */
+            
+            transition: all 2s ease-in 0.5s;
+
+        }
+
+        #box:hover{
+            background-color: magenta;
+            height: 300px;
+            width: 1000px;
+            border-radius: 50%;
+            border: 5px solid black;
+            font-size: 30px;
+            
+        }
+        /* #box:hover{
+            font-size: 100px;
+        } */
+        /* #box:hover{
+            background-color: green;
+        } */
+    </style>
+</head>
+<body>
+    <h2>This is transition tutorioal</h2>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+</body>
+</html>

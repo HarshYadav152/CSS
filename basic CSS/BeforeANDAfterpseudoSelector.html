@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Playpen+Sans&family=Roboto:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: aliceblue;
+            font-family: Agbalumo, sans-serif;
+        }
+        header::before{
+            background: url(professor.jpeg);
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+
+        }
+        .navigation {
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            height: 344px;
+            margin: 3px 230px;
+            /* border: 2px solid red; */
+            /* margin: 2px 23px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h3 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        /* section::before{
+            content: "This is the content";
+        }
+        section::after{
+            content: "This is the content";
+        } */
+        /* header{
+            display: flex;
+            flex-direction: column;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Sevice</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to coding world</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ratione impedit omnis! Minima blanditiis
+            impedit minus reiciendis illum asperiores optio voluptas repellat, fuga, totam aperiam nobis maxime!
+            Exercitationem, expedita .</p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frames and Animation</title>
+    <style>
+        .container{
+            background-color: chartreuse;
+        }
+        .box{
+            background-color: blue;
+            color: white;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: harsh; 
+            /* /* animation-name: harsh1;
+            animation-duration: 4s;
+            animation-iteration-count: 3; */
+
+            /* after given time(delay of given time in animation) animation run */
+            /* animation-delay: 3s; */
+            
+            /* how the complete animation behave */
+            /* animation-fill-mode:backwards; */
+            
+            /* starting slow end fast */
+            /* animation-timing-function: ease-in; */
+
+            /* starting fast end slow */
+            /* animation-timing-function: ease-out; */
+
+            /* starting slow  middle fast end slow */
+            /* animation-timing-function: ease-in-out; */
+
+            /* default case */
+            /* animation-timing-function: ease;  */
+
+            /* direction in which animation run */
+            animation-direction:alternate-reverse;
+
+
+            /* shorthand for animation */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+
+            animation: harsh1 2s ease 1s 3 normal forwards;
+        }
+
+        @keyframes harsh1 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            70%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+        @keyframes harsh{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

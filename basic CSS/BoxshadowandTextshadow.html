@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Box</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 10px 12px;
+            border: 2px solid green;
+            background-color: blueviolet;
+            color: aliceblue;
+            /* box-shadow: (x offset) (y offset) color; */
+            /* box-shadow: 10px 10px orange; */
+            /* box-shadow: (x offset) (y offset) blur-radius color; */
+            /* box-shadow: -10px -10px 10px orange; */
+            /* box-shadow: (x offset) (y offset) blur-radius spread-radius color; */
+            /* box-shadow: -10px 10px 10px 10px orange; */
+            
+            /* box-shadow: 10px 10px rgba(35, 27, 234, 0.4); */
+            /* in rgba a is alpha which is responsible for darkness of color */
+
+            /* if want to abb shadow inside the box the we use this */
+            /* box-shadow: inset 10px 13px 10px  green; */
+
+            /* multiple box shadow  */
+            /* box-shadow: 10px 12px blue, 15px 17px red; */
+
+
+
+        }
+        .card h2{
+            /* text-shadow: offset-x offset-y color; */
+            /* text-shadow: -3px -4px black; */
+            /* text-shadow: offset-x offset-y blur radius color; */
+            /* text-shadow: -3px -4px 5px black; */
+
+            /* spread radius is not available in text shadow */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ Course</h2>
+            <p>We provided c++ course Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo! Veritatis nihil
+                tempora explicabo iusto quam odio nostrum eum quod quidem, aut quisquam harum eius voluptates eos quia
+                consequatur modi beatae deserunt optio cumque vitae.</p>
+        </div>
+        <div class="card" id="card2">
+
+            <h2>Html Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo! Veritatis nihil
+                tempora explicabo iusto quam odio nostrum eum quod quidem, aut quisquam harum eius voluptates eos quia
+                consequatur modi beatae deserunt optio cumque vitae.</p>
+        </div>
+        <div class="card" id="card3">
+
+            <h2>Card 3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo! Veritatis nihil
+                tempora explicabo iusto quam odio nostrum eum quod quidem, aut quisquam harum eius voluptates eos quia
+                consequatur modi beatae deserunt optio cumque vitae.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

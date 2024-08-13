@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size and units</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /* width: 400px; */
+            width: 100vw;
+            /* height: 300px; */
+            height: 100vh;
+            font-size: 10px;
+            border: 2px solid red ;
+        }
+        h2{
+            text-align: center;
+            
+        }
+        #first{
+            /* example of em */
+            /* 3 times of its parent element */
+            /* font-size: 3em; */
+            /* 3 times of its font size */
+            /* padding: 3em; */
+            /* thus total padding is 90px */
+        }
+        #second{
+            /* example of rem */
+            /* font-size: 3rem;
+            padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="first">this is first heading</h2>
+        <h2 id="second">this is second heading</h2>
+        <h2 id="third">this is third heading</h2>
+    </div>
+</body>
+</html>
