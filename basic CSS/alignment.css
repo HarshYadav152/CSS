@@ -1,0 +1,42 @@
+* {
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 3px solid blue;
+            width: 75%;
+            margin: 30px auto;
+            background-color: rgb(66, 235, 254);
+            text-align: center;
+        }
+
+        .items {
+            background-color: aquamarine;
+            border: 3px solid red;
+            margin: 12px 4px;
+            padding: 12px 6px;
+        }
+
+        #fruits {
+            float: left;
+            width: 45%;
+        }
+
+        #computer {
+            float: right;
+            width: 45%;
+        }
+
+        #grocery {
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+        p,h3{
+            text-align: right;/*In CSS belower line have the higher precedence*/
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 50%;
+        }
